@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int i,n,rem,rev=0;
+  cout<<"enter a positive number : \n";
+  cin>>n;
+  do
+  {
+    rem=n%10;
+    rev=rev*10+rem;
+    n=n/10;
+  }
+  while(n!=0);
+  {
+    cout<<"the reverse of number = "<<rev<<endl;
+  }
+  if(n==rev||n>0)
+  {
+    cout<<"the number is palindrome ";
+  }
+  else
+  {
+    cout<<"the number is not palindrome";
+  }
+  return 0;
+}
